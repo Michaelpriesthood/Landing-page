@@ -1,0 +1,161 @@
+:root{
+    --primary-color: #0b5d75;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    background: var(--primary-color);
+    color: #fff;
+    position: relative;
+    min-height: 60vh;
+    padding: 20px 20px 0 20px;
+    
+}
+
+
+header .logo{
+    font-size: 22px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.open-slide{
+    float: right;
+    margin-right: 50px;    
+    width: 60px;
+    height: 50px;
+    border: 1px solid #ffffff5d;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+.open-slide:hover{
+    border: 1px solid #ffffff86;
+}
+
+
+nav{
+    position: fixed;
+    width: 0;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    overflow: hidden;
+    background:#fff;
+    transition: .5s;
+    z-index: 1; 
+}
+
+nav .btn-close{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    margin-right: 50px;
+    font-size: 30px;
+    color: #ffffffb4;
+    background: var(--primary-color);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+nav ul{
+    margin-top: 50px;
+    margin-left: 50px;
+    list-style: none;
+}
+
+nav li{
+    padding: 20px 0;
+}
+
+
+nav ul li a{
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px; 
+    transition: all .3s ease-in;  
+}  
+
+nav ul li a:hover{
+    background: var(--primary-color);
+    border-radius: 10px;
+    color: #fff;
+
+}
+
+.showcase{
+    max-width: 970px;
+    margin: auto;
+    margin-top: 5em;
+    text-align: center;
+}
+
+
+.showcase h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.showcase p{
+    font-size: 1.3rem;
+    line-height: 2rem;    
+}
+
+.btn{
+    margin-top: 25px;
+    background: inherit;
+    color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ffffff49;
+    border-radius: 25px;
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    border: 1px solid #ffffffb7;
+}
+
+section{
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+section h2{
+    margin-top: 25px;
+}
+
+section p{
+    margin-top: 18px;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    line-height: 2rem;  
+}

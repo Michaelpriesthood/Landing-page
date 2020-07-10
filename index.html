@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header> 
+
+        <!-- For the Menu Icon -->
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="2"/>
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="2"/>
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="2"/>
+                </svg>
+            </a>
+        </span>
+                    <!-- Side Menus -->
+        <nav id="side-menu">
+            <ul>
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Logo -->
+        <label class="logo">Company Name</label>
+
+        
+        <div class="showcase">
+            <h1>Welcome</h1>            
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit illum minima laudantium vel delectus ratione sit nihil id exercitationem expedita ex vero nemo qui, commodi, necessitatibus recusandae nostrum. Tenetur, tempore.</p>
+            <button class="btn">Learn More</button>
+        </div>
+    </header>       
+
+    <section>
+        <h2>What We Do:</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates doloribus eveniet quam! Et, amet? Dolorum quia neque dolore beatae nisi. Velit tempora nam maiores eligendi!</p>
+    </section>           
+
+    <!-- Javascript Codes -->
+    <script>
+            function openSlideMenu(){
+              document.getElementById('side-menu').style.width = '40%';
+            }
+        
+            function closeSlideMenu(){
+              document.getElementById('side-menu').style.width = '0';
+            }
+    </script>
+</body>
+</html>
